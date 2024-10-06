@@ -981,7 +981,7 @@ body{
 /** servicios **/
 
 .main-header-servicios{
-    background-image: url(/img/bg-portada-servicios.jpg);
+    background-image: url('../img/bg-portada-servicios.jpg');
     background-position: center 30%;
     background-repeat: no-repeat;
     background-size: 100%;    
