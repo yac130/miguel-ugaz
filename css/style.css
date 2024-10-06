@@ -1723,4 +1723,45 @@ body{
     }
 
 }        
-    
+
+@media only screen and (max-width: 1024px) {
+
+    .box-ctn-portada{
+        padding: 80px 20px;
+    }   
+        .box-ctn-portada .Texto{
+            max-width: 450px;
+        }
+    .SobreMi{
+        padding: 0 20px;
+    }
+    .box-audiencias{
+        padding: 40px 20px;
+    }
+        .box-audiencias .ctn-texto{
+            max-width: 50%;
+        }
+    .box-paso{
+        max-width: 27.5%;
+        min-height: 230px;
+    }
+    .box-main-libros{
+        margin-top: 65px;
+    }
+        .box-libro img{
+            max-width: 300px;
+        }
+    .box-main-notas-home{
+        padding: 250px 20px 80px;
+    }
+        .box-nota{
+            max-width: 27.5%;
+        }
+    .box-videos-home{
+        padding: 80px 20px;
+    }
+        .box-video{
+            max-width: 44%; 
+        }
+
+}
