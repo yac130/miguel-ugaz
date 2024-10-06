@@ -1025,7 +1025,7 @@ body{
                 vertical-align: top;
             }
 .seccion-gris-servicios{
-
+    transform: none;
 }
     .seccion-gris-servicios h5{
         font: 22px/1.2 'Poppins';
@@ -1109,7 +1109,7 @@ body{
                 display: inline-block;    
                 margin: 0 20px;                
                 max-width: 400px;                  
-                vertical-align: top;     
+                vertical-align: bottom;     
             }
                 .box-info-nota-destacada a,
                 .box-nota a{
