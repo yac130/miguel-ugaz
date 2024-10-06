@@ -1387,6 +1387,67 @@ body{
         .paginacion-videos p{
             color: #fff;
         }
+/** suscribete **/
+.main-suscribete{
+    background: url('../img/bg-suscribete.png') no-repeat center center;
+    background-size: cover;
+    margin-top: -40px;
+    padding: 80px 0;    
+}
+    .ctn-suscribete{
+        margin: 0 auto;
+        max-width: 900px;
+    }
+        .ctn-suscribete img{
+            display: block;
+            max-width: 100px;
+        }
+        .ctn-suscribete h3{
+            color: #fff;
+            font: 32px/1.3 'Poppins';
+            font-weight: 700;
+        }
+        .ctn-suscribete p{
+            color: #fff;
+            font: 14px/1.7 'Poppins';
+            font-weight: 400;
+        }
+        .ctn-suscribete label{
+            color: #fff;
+            display: block;
+            font: 14px/1.7 'Poppins';
+            font-weight: 400;
+        }
+        .ctn-suscribete input{
+            background: transparent;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            color: #fff;
+            display: block;
+            margin: 5px 0;
+            padding: 10px;
+            width: 70%;
+        }
+        .ctn-suscribete button{
+            background-color: #FF1F4D;
+            border: none;
+            border-radius: 5px;
+            box-sizing: border-box;
+            color: #fff;
+            cursor: pointer;
+            display: block;
+            font: 14px / 1.4 'Poppins';
+            font-weight: 500;
+            margin: 20px 0;
+            max-width: 180px;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+        }
+            .ctn-suscribete button:hover{
+                background-color: #fff;
+                color: #FF1F4D;               
+            }
 
 
 @media only screen and (max-width: 640px) {  
@@ -1616,6 +1677,13 @@ body{
         }
         .box-tiempo{
             margin: 0 auto;
+        }
+    .ctn-suscribete{
+        padding: 0 20px;
+    }
+        .ctn-suscribete h3{
+            margin: 5px auto;
+            font-size: 1.5rem;
         }
 
 }        
