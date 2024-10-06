@@ -1726,6 +1726,9 @@ body{
     .box-audiencias .ctn-texto{
         max-width: 100%;
     }
+    .box-nota{
+        max-width: 100%;
+    }
 
 }        
 
