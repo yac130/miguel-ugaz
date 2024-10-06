@@ -1763,12 +1763,17 @@ body{
         .box-video{
             max-width: 44%; 
         }
-    .main-formulario{
+    .main-formulario,
+    .main-preguntas{
         padding: 100px 20px 80px;
     }
         .main-formulario img{
             display: none;
         }
 
+
+    .footer-interior{
+        padding: 30px 0 40px;
+    }
 
 }
