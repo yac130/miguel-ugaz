@@ -272,7 +272,7 @@ body{
             box-sizing: border-box;
             margin: 0 auto;
             max-width: 1100px;            
-            padding: 20px 30px;    
+            padding: 30px;    
             text-align: center;        
         }
             .box-titular-main-pasos{
@@ -331,12 +331,12 @@ body{
     .seccion-gris{
         background-color: #F2F7FF;
         height: 1200px;
-        padding-top: 40px;
+        padding-top: 80px;
         text-align: center;
         z-index: 40;
     }
         .box-colaboracion{
-
+            padding-bottom: 80px;
         }
             .box-colaboracion h3{
                 margin-bottom: 10px;
@@ -359,9 +359,21 @@ body{
                     border: none !important;
                     box-shadow: none !important;
                 }
+                    .box-colaboracion .box-slider .bx-wrapper .bx-prev,
+                    .box-main-premios .slider-premios .bx-wrapper .bx-prev{
+                        background: url('../img/flecha-izquierda-paginacion.png') no-repeat;
+                        background-size: 100%;
+                        max-width: 25px;
+                    }
+                    .box-colaboracion .box-slider .bx-wrapper .bx-next,
+                    .box-main-premios .slider-premios .bx-wrapper .bx-next{
+                        background: url('../img/flecha-derecha-paginacion.png') no-repeat;
+                        background-size: 100%;
+                        max-width: 25px;
+                    }
                 ul.bxslider li{
                     border-radius: 20px;
-                }
+                }                    
                 .box-colaboracion .box-slider .box-info{
                     border: 1px solid #FF1F4D;
                     border-bottom-left-radius: 20px;
@@ -793,10 +805,20 @@ body{
 .main-header-sobre-mi{
     background-color: #fff;
     padding: 40px 0;
+    
+    height: 67vh; 
+    left: 0;
+    position: fixed;
+    top: 95px;
+    width: 100%;
+    z-index: 1;
 }
     .ctn-header-sobre-mi{
         margin: 0 auto;
         max-width: 1100px;
+        position: relative;
+        transform: translateY(-50%);
+        top: 50%;        
     }
         .ctn-header-sobre-mi h3{
             font: 32px/1.3 'Poppins';
@@ -845,6 +867,8 @@ body{
                 }
 .seccion-gris-sobre-mi{
     height: auto;
+    padding-bottom: 0;
+    transform: translateY(80vh);
 }
     .seccion-gris-sobre-mi p{
         max-width: 800px;
@@ -878,6 +902,9 @@ body{
         text-align: left;
         vertical-align: top;
     }
+        .box-ctn-titular-formulario h3{
+            margin-top: 0;
+        }
     #formulario{
 
     }
@@ -1541,6 +1568,7 @@ body{
     }
     .seccion-gris{
         height: auto;
+        transform: none;
     }
         .box-main-libros{
             display: none;
@@ -1597,12 +1625,17 @@ body{
         text-align: center;
     }
     .main-header-sobre-mi{
+        height: auto;
         padding: 40px 20px;
+        position: relative;
+        top: 0;
+        width: auto;        
     }
         .box-presentacion{
             text-align: left;
         }
             .box-presentacion img{
+                margin-top: 0;
                 max-width: 140px;
             }
             .box-texto-presentacion{
@@ -1685,6 +1718,9 @@ body{
             margin: 5px auto;
             font-size: 1.5rem;
         }
+    .ctn-header-sobre-mi{
+        transform: none;
+    }
 
 }        
     
