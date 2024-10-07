@@ -1082,6 +1082,19 @@ body{
         margin: 0 auto;
         max-width: 800px;
     }
+        .ctn-preguntas h4{
+            color: #fff;
+            font: 32px/1.2 'Poppins';
+            font-weight: 700;
+            margin: 0 auto;
+        }
+            p.bajada-preguntas{
+                border-bottom: 1px solid #c91e52;
+                color: #fff;
+                font: 14px/1.8 'Poppins';
+                font-weight: 400;
+                padding-bottom: 20px;
+            }
         .ctn-preguntas ul{
             list-style-type: none;
             padding: 0;
@@ -1093,7 +1106,7 @@ body{
             }
                 .ctn-preguntas ul li h5{
                     color: #fff;
-                    font: 32px/1.2 'Poppins';
+                    font: 24px/1.2 'Poppins';
                     font-weight: 700;
                     margin: 0 auto 20px;
                 }
@@ -1104,7 +1117,7 @@ body{
                     }
                 .ctn-preguntas ul li p{
                     color: #fff;
-                    font: 14px/1.6 'Poppins';
+                    font: 14px/1.8 'Poppins';
                     font-weight: 400;
                 }
     #accordion .content {
