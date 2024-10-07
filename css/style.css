@@ -1076,7 +1076,7 @@ body{
 .main-preguntas{
     background-color: #A0143D;
     margin-top: -40px;
-    padding: 80px 0;
+    padding: 120px 0 80px;
 }
     .ctn-preguntas{
         margin: 0 auto;
@@ -1600,6 +1600,7 @@ body{
                 display: none;
             }
     .SobreMi{
+        margin-bottom: 0;
         padding: 0 20px;
     }
         .SobreMi .Reel{
@@ -1607,11 +1608,12 @@ body{
             margin-top: 30px;
         }
     .box-audiencias{
-        padding: 40px 20px;
+        padding: 5px 20px;
     }
     .box-main-pasos{
         background-repeat: repeat;
         background-size: cover;
+        margin: 0 20px;
     }
         .box-titular-main-pasos{
             padding: 0;
@@ -1625,6 +1627,7 @@ body{
     }
     .seccion-gris{
         height: auto;
+        padding-bottom: 0;
         transform: none;
     }
         .box-main-libros{
@@ -1677,7 +1680,7 @@ body{
         margin: 15px auto;
         width: 100%;
     }
-    p.copy{
+    .box-footer p.copy{
         padding: 10px 0;
         text-align: center;
     }
@@ -1741,7 +1744,7 @@ body{
                 padding: 0 20px;
             }
         .ctn-preguntas ul{
-            padding: 0 20px;
+            padding: 0;
         }
         .main-preguntas{
             padding: 40px 0 25px;
@@ -1780,10 +1783,37 @@ body{
     }
 
     .box-audiencias .ctn-texto{
+        margin-bottom: 20px;
         max-width: 100%;
     }
     .box-nota{
         max-width: 100%;
+    }
+    .SobreMi .Frame84{
+        padding-top: 0;
+    }
+    .SobreMi .Frame84 .Frame83 h3{
+        font-size: 22px;
+    }
+    .SobreMi .Frame84 .Frame83 p{
+        line-height: 2;
+    }
+    .box-dato-audiencia span{
+        font-size: 48px;
+    }
+    .box-dato-audiencia p{
+        margin: 8px auto;
+    }
+    .margin-left,
+    .margin-right{
+        margin: 0 auto 20px;
+    }
+    .ctn-preguntas{
+        margin: 0 20px;
+        padding-top: 40px;
+    }
+    .ctn-suscribete p{
+        margin: 10px auto 20px;
     }
 
 }        
