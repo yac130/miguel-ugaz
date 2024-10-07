@@ -23,13 +23,14 @@ body{
         position: relative;
     }
     .Header{
-        background: #001228; 
+        background: #001228;
         backdrop-filter: blur(39px);
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
         padding: 20px 0;
-        position: relative;
-        z-index: 10;
+        position: sticky;
+        top: 0;
+        z-index: 90;        
     }
         .Rectangle2652{           
             position: relative;
@@ -114,7 +115,7 @@ body{
             box-sizing: border-box;
             margin: 0 auto;
             max-width: 1100px;
-            padding: 80px 0;
+            padding: 110px 0;
             text-align: center;
         }
             .box-ctn-portada .Texto{
@@ -158,7 +159,7 @@ body{
         z-index: 50;
     }
         .SobreMi{
-            margin: 0 auto;
+            margin: 0 auto 40px;
             max-width: 1100px;           
             text-align: center;
         }
@@ -176,6 +177,7 @@ body{
                 float: right;
                 margin: 20px auto;
                 max-width: 600px;
+                padding-top: 80px;
                 text-align: left;
                 vertical-align: top;
             }
@@ -188,6 +190,7 @@ body{
                 .box-ctn-titular-formulario h3{
                     font: 28px/1.3 'Poppins';
                     font-weight: 700;
+                    margin: 12px auto;
                 }
                     .SobreMi .Frame84 .Frame83 h3 span,
                     .box-audiencias .ctn-texto h3 span,
@@ -200,6 +203,7 @@ body{
                         display: block;
                         font: 15px/1.3 'Poppins';
                         font-weight: 500;
+                        letter-spacing: 1px;
                         margin-bottom: 10px;
                         text-transform: uppercase;
                     }
@@ -210,6 +214,7 @@ body{
                 .box-premios p{
                     font: 16px/1.8 'Poppins';
                     font-weight: 400;
+                    margin: 8px auto;
                 }
         .box-audiencias{
             margin: 0 auto;
@@ -330,8 +335,8 @@ body{
                 }
     .seccion-gris{
         background-color: #F2F7FF;
-        height: 1200px;
-        padding-top: 80px;
+        height: 1300px;
+        padding-top: 120px;
         text-align: center;
         z-index: 40;
     }
@@ -348,10 +353,10 @@ body{
                 font: 16px / 1.8 'Poppins';
                 font-weight: 400;
                 margin: 0 auto;
-                max-width: 700px;
+                max-width: 800px;
             }
             .box-colaboracion .box-slider{
-                margin: 20px auto;
+                margin: 40px auto 100px;
                 max-width: 1100px;
             }
                 .bx-wrapper{
@@ -375,7 +380,7 @@ body{
                     border-radius: 20px;
                 }                    
                 .box-colaboracion .box-slider .box-info{
-                    border: 1px solid #FF1F4D;
+                    border: 2px solid #FF1F4D;
                     border-bottom-left-radius: 20px;
                     border-top-left-radius: 20px;
                     border-top-right-radius: 20px;
@@ -383,19 +388,19 @@ body{
                     box-sizing: border-box;
                     left: 8%;
                     max-width: 300px;
-                    padding: 10px;
+                    padding: 16px 10px;
                     position: absolute;   
                 }
                     .box-colaboracion .box-slider .box-info h5{
                         color: #fff;
-                        font: 16px/1.4 'Poppins';
+                        font: 22px/1.2 'Poppins';
                         font-weight: 600;
-                        margin: 0 auto;
+                        margin: 0 auto 8px;
                         text-align: left;
                     }
                     .box-colaboracion .box-slider .box-info p{
                         color: #fff;
-                        font: 13px / 1.8 'Poppins';
+                        font: 13px/1.5 'Poppins';
                         font-weight: 400;
                         text-align: left;
                     }
@@ -404,6 +409,7 @@ body{
                         top: 20px;
                     }
             .box-main-libros{
+                margin: 40px auto;
                 text-align: center;
             }     
                 .box-libro{
@@ -438,7 +444,7 @@ body{
                         }
                     .box-libro img{
                         display: inline-block;
-                        max-width: 400px;
+                        max-width: 420px;
                     }
                     img.flecha{
                         margin: 15px 0;
@@ -455,7 +461,7 @@ body{
                             float: right;
                         }
                             .box-libro-izquierda.enter-libro-izquierda{
-                                left: 0;
+                                left: 4%;
                                 transition: all 0.5s ease-in-out; 
                             }
                                 .box-libro-izquierda.salir-libro-izquierda{
@@ -472,7 +478,7 @@ body{
                             float: left;
                         }
                             .box-libro-derecha.enter-libro-derecha{
-                                right: 0;
+                                right: 4%;
                                 transition: all 0.5s ease-in-out; 
                             }
                                 .box-libro-derecha.salir-libro-derecha{
@@ -509,7 +515,14 @@ body{
             margin: 0 auto;
             max-width: 1100px;
             text-align: center;
-        }      
+        }    
+            .box-notas-home .box-nota{
+                margin: 0 auto;
+                max-width: 350px;
+            }
+                .box-notas-home .box-nota.box-nota-center{
+                    margin: 0 20px;
+                }
             .box-notas-home p a{
                 border: none;    
                 line-height: 1.6;           
@@ -519,6 +532,7 @@ body{
                 width: 100%;
             }
             .box-ctn-titular-notas-home{
+                margin-bottom: 40px;
                 max-width: 700px;
                 text-align: left;
             }
@@ -530,7 +544,7 @@ body{
                 vertical-align: top;
             }
                 .box-nota img{
-                    margin-bottom: 20px;
+                    margin-bottom: 16px;
                     border-radius: 20px;
                 }
                 a.btn-nota{
@@ -547,6 +561,7 @@ body{
                 }
                 .box-nota p a{
                     color: #000;
+                    font-size: 16px;
                     font-weight: 600;
                     text-decoration: none;
                 }
@@ -555,11 +570,14 @@ body{
                         text-decoration: underline;
                     }
             a.ver-mas{
+                border-bottom: 1px solid transparent;
                 color: #000;
                 display: block;
                 font: 13px / 1.8 'Poppins';
                 font-weight: 600;
+                letter-spacing: 1px;
                 margin: 20px auto;
+                max-width: 120px;
                 text-align: center;
                 text-decoration: none;
             }
@@ -567,7 +585,7 @@ body{
                 color: #fff;
             }
                 a.ver-mas:hover{
-                    text-decoration: underline;
+                    border-bottom: 1px solid #000;
                 }
     .box-main-videos-home{
         background-color: #001735;
@@ -581,9 +599,10 @@ body{
         .box-videos-home{
             margin: 0 auto;
             max-width: 1100px;
-            padding: 80px 0;
+            padding: 100px 0;
         }
             .box-ctn-titular-videos-home{
+                margin-bottom: 40px;
                 max-width: 700px;
                 text-align: left;
             }
@@ -593,12 +612,12 @@ body{
                     margin: 0 auto;
                 }
                 .box-ctn-titular-videos-home p{
-
+                    margin: 10px auto;
                 }
             .box-video{
                 display: inline-block;
-                margin: 20px;
-                max-width: 500px;
+                margin: 0 auto 20px;
+                max-width: 527px;
                 vertical-align: top;
             }
                 .box-video img{
@@ -606,9 +625,15 @@ body{
                 }
                 .box-video p{
                     color: #fff;
-                    font: 13px / 1.8 'Poppins';
+                    font: 16px / 1.8 'Poppins';
                     font-weight: 400;
                     text-align: left;
+                }
+                .margin-right{
+                    margin-right: 20px;
+                }
+                .margin-left{
+                    margin-left: 20px;
                 }
     .box-main-premios{
         background-color: #fff;
@@ -665,6 +690,7 @@ body{
             border-radius: 20px;
             margin: 0 auto;
             max-width: 1100px;
+            padding: 20px 0;
         }
             .box-titular-newsletter{
                 display: inline-block;
@@ -681,16 +707,18 @@ body{
                 .box-titular-newsletter h6{
                     color: #fff;
                     display: inline-block;
-                    font: 20px/1.8 'Poppins';
+                    font: 24px / 1.2 'Poppins';
                     font-weight: 700;
-                    margin: 0 auto;                    
-                    margin-bottom: 15px;
-                    vertical-align: bottom;
+                    margin: 0 auto;
+                    margin-bottom: 8px;
+                    max-width: 440px;
+                    vertical-align: bottom;                    
                 }
                     .box-titular-newsletter h6 span{
                         display: block;
                         font-size: 14px;
                         font-weight: 400;
+                        margin-top: 8px;
                     }
             .box-input-newsletter{
                 display: inline-block;
@@ -711,7 +739,7 @@ body{
                     border: 1px solid #fff;
                     border-radius: 5px;
                     color: #fff;
-                    padding: 10px;
+                    padding: 14px 10px;
                     width: 95%;
                 }
                 .box-input-newsletter a{
@@ -722,7 +750,7 @@ body{
                     display: block;
                     font: 14px/1.4 'Poppins';
                     font-weight: 500;
-                    margin: 10px 0;
+                    margin: 14px 0;
                     max-width: 150px;
                     padding: 10px;
                     text-align: center;
@@ -734,11 +762,11 @@ body{
                     }
     .box-footer{
         background-color: #001228;
-        padding: 20px 0;
+        padding: 40px 0 60px;
     }    
         .footer-interior{
             margin-top: -20px;
-            padding: 20px 0 40px;
+            padding: 40px 0 60px;
         }   
         .ctn-footer{
             border-bottom: 1px solid #02244c;
@@ -784,7 +812,7 @@ body{
                     ul.social li a{
 
                     }
-        p.copy{
+        .box-footer p.copy{
             color: #fff;
             font: 12px/1.4 'Poppins';
             font-weight: 400;
@@ -821,10 +849,10 @@ body{
         top: 50%;        
     }
         .ctn-header-sobre-mi h3{
-            font: 32px/1.3 'Poppins';
+            font: 40px / 1.1 'Poppins';
             font-weight: 700;
             margin: 0 auto;
-            max-width: 400px;
+            max-width: 600px;
             text-align: center;
         }
         .box-presentacion{
@@ -849,7 +877,7 @@ body{
                 display: inline-block;
                 vertical-align: top;
                 margin-left: -35px;
-                max-width: 500px;
+                max-width: 600px;
                 padding: 0 40px 20px;
             }
                 .box-texto-presentacion p{
@@ -873,17 +901,24 @@ body{
     .seccion-gris-sobre-mi p{
         max-width: 800px;
     }
+    p.intro-colaboracion{
+        font-size: 20px;   
+    }
+    p.bajada-sobre-mi{
+        font-size: 18px;
+        line-height: 1.7;
+    }
     .box-quien{
-        margin: 0 auto;
-        max-width: 700px;
+        margin: 60px auto;
+        max-width: 800px;
     }
         .box-quien h4{
-            font: 18px/1.4 'Poppins';
+            font: 22px/1.4 'Poppins';
             font-weight: 700;
             text-align: left;
         }
         .box-quien p{
-            font: 16px/1.7 'Poppins';
+            font: 16px/1.9 'Poppins';
             margin-bottom: 20px;
             text-align: left;
         }
@@ -918,9 +953,13 @@ body{
             border: 1px solid #c2c2c2;
             border-radius: 5px;
             margin-bottom: 20px;
-            padding: 10px;
+            padding: 15px 10px;
             width: 96%;
         }
+            #formulario textarea{
+                font: 13px/1.7 'Poppins';
+                font-weight: 400;
+            }
         #formulario button{
             background: #FF1F4D;
             border: none;
@@ -991,20 +1030,21 @@ body{
 }
     .ctn-header-servicios{
         margin: 0 auto;    
-        max-width: 800px;        
+        max-width: 900px;        
     }
         .ctn-header-servicios h3{
             color: #fff;
-            font: 52px/1.2 'Poppins';
+            font: 40px/1.1 'Poppins';
             font-weight: 700;
             margin: 0;
-            max-width: 600px;
+            max-width: 500px;
         }
         .ctn-header-servicios p{
             color: #fff;
             font: 16px / 1.5 'Poppins';
             font-weight: 400;
-            max-width: 600px;
+            margin: 8px 0 20px;
+            max-width: 500px;
         }
         .ctn-header-servicios a{
             background-color: #00AC5E;
@@ -1036,11 +1076,11 @@ body{
 .main-preguntas{
     background-color: #A0143D;
     margin-top: -40px;
-    padding: 50px 0;
+    padding: 80px 0;
 }
     .ctn-preguntas{
         margin: 0 auto;
-        max-width: 700px;
+        max-width: 800px;
     }
         .ctn-preguntas ul{
             list-style-type: none;
@@ -1053,7 +1093,7 @@ body{
             }
                 .ctn-preguntas ul li h5{
                     color: #fff;
-                    font: 22px/1.2 'Poppins';
+                    font: 32px/1.2 'Poppins';
                     font-weight: 700;
                     margin: 0 auto 20px;
                 }
@@ -1084,6 +1124,7 @@ body{
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     padding-bottom: 80px;
+    padding-top: 56px;
     position: relative;
 }
     .ctn-notas-blog{
@@ -1097,12 +1138,12 @@ body{
         }
         .box-nota-destacada{
             margin: 0 auto;
-            max-width: 900px;
+            max-width: 1060px;
         }
             .box-nota-destacada img{
                 border-radius: 20px;
                 display: inline-block;
-                max-width: 450px;
+                max-width: 615px;
                 vertical-align: top;
             }
             .box-info-nota-destacada{
@@ -1117,10 +1158,10 @@ body{
                     border-radius: 20px;
                     color: #FF1F4D;
                     display: block;
-                    font: 14px/1.3 'Poppins';
+                    font: 13px/1.3 'Poppins';
                     font-weight: 600;
                     max-width: 100px;
-                    padding: 10px;
+                    padding: 8px 10px;
                     text-align: center;
                     text-decoration: none;
                 }
@@ -1148,6 +1189,7 @@ body{
                 ul.filtros li p{
                     font: 13px/1.5 'Poppins';
                     font-weight: 600;
+                    border-bottom: 1px solid #000000;
                 }
                 ul.filtros li.filtro-activo,
                 ul.filtros li:hover{
@@ -1244,7 +1286,7 @@ body{
     .ctn-interior-nota-blog h3{
         line-height: 1.2;
         margin: 20px auto 10px;
-        max-width: 500px;
+        max-width: 800px;
     }
     p.bajada{
         font: 16px/1.5 'Poppins';
@@ -1267,7 +1309,7 @@ body{
         .box-social-nota{
             display: inline-block;
             position: sticky;
-            top: 0;
+            top: 20px;
             vertical-align: top;           
         }
             .box-social-nota p{
@@ -1347,7 +1389,7 @@ body{
                 .box-tiempo img{
                     display: inline-block;
                     max-width: 15px;
-                    vertical-align: top;
+                    vertical-align: middle;
                 }
                 .box-tiempo p{
                     display: inline-block;
@@ -1357,11 +1399,11 @@ body{
                     vertical-align: top;
                 }
             p.primer-parrafo{
-                font: 17px/1.7 'Poppins' !important;
+                font: 20px/1.7 'Poppins' !important;
                 font-weight: 400;
             }
             .contenido p{
-                font: 15px/1.7 'Poppins';
+                font: 15px/1.9 'Poppins';
                 font-weight: 400;
             }
         .box-mas-notas{
@@ -1419,7 +1461,7 @@ body{
     background: url('../img/bg-suscribete.png') no-repeat center center;
     background-size: cover;
     margin-top: -40px;
-    padding: 80px 0;    
+    padding: 104px 0;    
 }
     .ctn-suscribete{
         margin: 0 auto;
@@ -1433,6 +1475,7 @@ body{
             color: #fff;
             font: 32px/1.3 'Poppins';
             font-weight: 700;
+            margin: 8px auto;
         }
         .ctn-suscribete p{
             color: #fff;
@@ -1452,8 +1495,8 @@ body{
             color: #fff;
             display: block;
             margin: 5px 0;
-            padding: 10px;
-            width: 70%;
+            padding: 15px 10px;
+            width: 60%;
         }
         .ctn-suscribete button{
             background-color: #FF1F4D;
@@ -1467,7 +1510,7 @@ body{
             font-weight: 500;
             margin: 20px 0;
             max-width: 180px;
-            padding: 10px;
+            padding: 10px 24px;
             text-align: center;
             text-decoration: none;
         }
