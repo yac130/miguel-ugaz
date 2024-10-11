@@ -16,7 +16,7 @@ body{
 
 .Home{
     margin: 0 auto;
-    max-width: 1500px;
+    /*max-width: 1500px;*/
 }
     .Portada,
     .Secciones{
@@ -115,10 +115,14 @@ body{
     }
         .box-ctn-portada{
             box-sizing: border-box;
+            left: 50%;
             margin: 0 auto;
             max-width: 1100px;
-            padding: 110px 0;
             text-align: center;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            top: 50%;            
+            width: 100%;
         }
             .box-ctn-portada .Texto{
                 display: inline-block;
@@ -548,7 +552,7 @@ body{
             }
             .box-nota{
                 display: inline-block;
-                margin: 0 20px;
+                margin: 0 20px 20px;
                 max-width: 320px;
                 text-align: left;
                 vertical-align: top;
@@ -639,6 +643,10 @@ body{
                     font-weight: 400;
                     text-align: left;
                 }
+                    .box-video p:hover{
+                        color: #FF1F4D;
+                        cursor: pointer;
+                    }
                 .margin-right{
                     margin-right: 20px;
                 }
@@ -698,9 +706,10 @@ body{
             background: rgb(18,33,58);
             background: linear-gradient(133deg, rgba(18,33,58,1) 0%, rgba(143,21,72,1) 100%);
             border-radius: 20px;
+            box-sizing: border-box;
             margin: 0 auto;
             max-width: 1100px;
-            padding: 20px 0;
+            padding: 20px 60px;
         }
             .box-titular-newsletter{
                 display: inline-block;
@@ -721,7 +730,7 @@ body{
                     font-weight: 700;
                     margin: 0 auto;
                     margin-bottom: 8px;
-                    max-width: 440px;
+                    max-width: 65%;
                     vertical-align: bottom;                    
                 }
                     .box-titular-newsletter h6 span{
@@ -732,7 +741,7 @@ body{
                     }
             .box-input-newsletter{
                 display: inline-block;
-                margin: 20px auto;
+                margin: 10px auto;
                 max-width: 45%;
                 text-align: left;
                 vertical-align: top;
@@ -1172,7 +1181,9 @@ body{
             .box-info-nota-destacada{
                 display: inline-block;    
                 margin: 0 20px;                
-                max-width: 400px;                  
+                max-width: 400px;   
+                position: relative;
+                transform: translate(0%, -50%);
                 vertical-align: bottom;     
             }
                 .box-info-nota-destacada a,
@@ -1212,11 +1223,12 @@ body{
                 ul.filtros li p{
                     font: 13px/1.5 'Poppins';
                     font-weight: 600;
-                    border-bottom: 1px solid #000000;
+                    /*border-bottom: 1px solid #000000;*/
                 }
                 ul.filtros li.filtro-activo,
                 ul.filtros li:hover{
-                    text-decoration: underline;
+                    border-bottom: 1px solid #000000;
+                    /*text-decoration: underline;*/
                 }
                 .filtros {
                     display: flex;
@@ -1233,8 +1245,8 @@ body{
                         flex: 0 0 auto;
                         scroll-snap-align: start; /* Alinear cada item al inicio */
                         margin-right: 16px;
-                        padding: 10px 15px;
-                        border-radius: 5px;
+                        /*padding: 10px 15px;*/
+                        /*border-radius: 5px;*/
                         white-space: nowrap;
                     }            
                         .filtros li p {
@@ -1256,6 +1268,7 @@ body{
                     color: #000;
                     font: 16px/1.5 'Poppins';
                     font-weight: 600;
+                    margin: 10px auto;
                     max-width: 100%;
                     padding: 0;
                     text-align: left;
@@ -1600,7 +1613,10 @@ body{
         top: -30px;
     }
         .box-ctn-portada{
+            left: inherit;
+            transform: none;
             padding: 25px 20px;
+            position: relative;
         }
             .ContenidoParaGenerarNegocios{
                 font-size: 2rem !important;
@@ -1773,6 +1789,7 @@ body{
     }
         .box-info-nota-destacada{
             margin: 20px 0;
+            transform: none;
         }
     .box-social-nota{
         margin: 0 auto 20px;
@@ -1830,6 +1847,9 @@ body{
     }
     .ctn-suscribete p{
         margin: 10px auto 20px;
+    }
+    ul.filtros{
+        margin: 40px 20px;
     }
 
 }        
